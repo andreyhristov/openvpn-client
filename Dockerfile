@@ -5,11 +5,12 @@ RUN apk --update --no-cache add \
     wget \
     zip \
     unzip \
-	iputils \
+    iputils \
     busybox-extras \
-	net-tools \
-	openssh-server \
-	openvpn
+    net-tools \
+    bash \
+    openssh-server \
+    openvpn
 
 
 RUN adduser -D -u 1000 local && echo 'local:1234' | chpasswd
